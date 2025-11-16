@@ -1,16 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body{ font-family: 'Outfit', sans-serif !important;}
-a{ font-family: 'Outfit', sans-serif !important;}
-p{ font-family: 'Outfit', sans-serif !important;} 
-li{ font-family: 'Outfit', sans-serif !important;}
-h1{ font-family: 'Outfit', sans-serif !important;}
-h2{ font-family: 'Outfit', sans-serif !important;}
-h3{ font-family: 'Outfit', sans-serif !important;}
-h4{ font-family: 'Outfit', sans-serif !important;}
-h5{ font-family: 'Outfit', sans-serif !important;}
-h6{ font-family: 'Outfit', sans-serif !important;}
-body { overflow-x: hidden; }
+body {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+a {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+p {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+li {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h3 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h4 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h5 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h6 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+body {
+    overflow-x: hidden;
+}
 
 
 
@@ -19,6 +51,7 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
 header.header {
     padding: 20px 10px;
 }
@@ -60,10 +93,11 @@ ul.social-media li a {
     text-align: end;
 }
 
-.top-btn > a:hover {
+.top-btn>a:hover {
     color: #fff;
 }
-.top-btn > a {
+
+.top-btn>a {
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
@@ -81,12 +115,12 @@ ul.social-media li a {
     overflow: hidden;
 }
 
-.top-btn > a i {
+.top-btn>a i {
     padding-right: 8px;
 }
 
 
-.top-btn > a:before {
+.top-btn>a:before {
     content: '';
     position: absolute;
     top: 0px;
@@ -99,7 +133,7 @@ ul.social-media li a {
     z-index: -1;
 }
 
-.top-btn > a:hover:before {
+.top-btn>a:hover:before {
     width: 100%;
     left: 0px;
     right: auto;
@@ -137,7 +171,7 @@ section.section-one {
 
 .search-box select:focus-visible {
     outline: unset !important;
- }
+}
 
 
 
@@ -295,11 +329,28 @@ footer.footer a {
 .ftr-one ul li {
     margin-bottom: 12px;
 }
-.img-size{
+
+.img-size {
     width: 450px;
     height: 220px;
 }
-#image-size{
+
+#image-size {
+    width: 100%;
+    height: 350px;
+}
+
+#image-size>img {
+    width: 100%;
+    height: 100%;
+}
+
+#images3 {
+    width: 100%;
+    height: 500px;
+}
+
+#images3>img {
     width: 100%;
     height: 100%;
 }

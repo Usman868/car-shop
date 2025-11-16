@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" id="loginBtn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" id="registerBtn" onclick="register()">Register</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="email" class="input-field" id="login-email" placeholder="Email Id" required>
+                <input type="password" class="input-field" id="login-pasword" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" onclick="loginBtn1(event)">Log In</button>
+            </form>
+
+            <div id="register" class="input-group">
+                <input type="email" class="input-field" id="user-email" placeholder="Email Id" required>
+                <input type="text" class="input-field" id="username" placeholder="Username" required>
+                <input type="password" class="input-field" id="user-pasword" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn" onclick="registerBtn1(event)">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

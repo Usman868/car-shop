@@ -814,17 +814,6 @@ var carCompanies = {
 }
 
 
-
-// for(keys in company){
-// //  console.log(company[keys])
-//  for(keys1 in company[keys]){
-// //   console.log(company[keys][keys1])
-//   for(keys2 in company[keys][keys1]){
-//    console.log(company[keys][keys1][keys2].Image)
-//    images.innerHTML+= `<img src="${company[keys][keys1][keys2].Image}" alt="" class="image-car">`
-//   }
-//  }
-// }
 var company = document.getElementById("company");
 var brand = document.getElementById("brand");
 var allCars = document.getElementById("allCars");
@@ -892,9 +881,9 @@ function filterCars() {
             // console.log(collactData[keys].Image)
             for (keys1 in collactData[keys]) {
                 allCars.innerHTML += `
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<div class="result-box last-bx">
-			<div class=""><img src="${collactData[keys][keys1].Image}" id="image-size"></div>
+			<div id="image-size"><img src="${collactData[keys][keys1].Image}" ></div>
 			<div class="cont-box">
 			    <h3>${collactData[keys][keys1].Name}</h3>
 				<h4>Company: ${collactData[keys][keys1].Company}</h4>
@@ -914,7 +903,7 @@ function filterCars() {
             allCars.innerHTML += `
 		<div class="col-md-12">
 			<div class="result-box last-bx">
-			<div class=""><img src="${collactData[keys].Image}" id="image-size"></div>
+			<div id="images3"><img src="${collactData[keys].Image}" ></div>
 			<div class="cont-box">
 			    <h3>${collactData[keys].Name}</h3>
 				<h4>Company: ${collactData[keys].Company}</h4>
@@ -938,3 +927,35 @@ function colorDivCreate(colours) {
     return colorsDiv;
 }
 
+
+
+
+function changePage() {
+    var login =JSON.parse(localStorage.getItem("login"))
+    if (!login) {
+        window.location.href = "login.html"
+        return;
+    } else if (login == true) {
+        var loginRegister = document.getElementById("login-logout")
+        loginRegister.innerHTML = `<i class="far fa-user"> Login/Resgister</i>`
+        login = false
+        localStorage.setItem("login", JSON.stringify(login))
+        return;
+    }else{
+        return;
+    }
+}
+
+function checklogin() {
+    var login =JSON.parse(localStorage.getItem("login"))
+    if (login) {
+        var loginRegister = document.getElementById("login-logout")
+        loginRegister.innerHTML = `<i class="far fa-user"> Logout</i>`
+        console.log(loginRegister)
+        return;
+    } else {
+        return;
+    }
+}
+
+checklogin()
