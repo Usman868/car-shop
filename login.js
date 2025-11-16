@@ -63,6 +63,7 @@ function loginBtn1(event) {
     var email = document.getElementById("login-email").value;
     var password = document.getElementById("login-pasword").value;
     var users = JSON.parse(localStorage.getItem("user"))
+    if(users){
     for (var i = 0; i < users.length; i++) {
         if (users[i].email === email && users[i].password === password) {
             alert("correct email or password!");
@@ -71,6 +72,7 @@ function loginBtn1(event) {
             window.location.href = "index.html"
             return;
         }
+     }
     }
     alert("incorrect email or password!");
 }
